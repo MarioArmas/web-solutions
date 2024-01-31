@@ -1,0 +1,14 @@
+{
+  "webpages": [
+    {
+      "url": "url1",
+      "title": "titulo1",
+      "image": ""
+    },
+    {
+      "url": "url2",
+      "title": "titulo2",
+      "image": ""
+    }
+  ]
+}

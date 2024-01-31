@@ -1,7 +1,9 @@
 import './App.css';
+import ContactUs from './layouts/ContactUs';
 import Footer from './layouts/Footer';
 import Landing from './layouts/Landing';
 import Navbar from './layouts/Navbar';
+import Pages from './layouts/Pages';
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <div className="App">
         <Navbar />
         <Landing />
+        <Pages />
+        <ContactUs />
         <Footer />
       </div>
     </div>
