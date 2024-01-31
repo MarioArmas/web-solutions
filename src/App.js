@@ -7,7 +7,7 @@ import Pages from './layouts/Pages';
 
 function App() {
   return (
-    <div className="w-full h-full bg-[url('/src/assets/bg-image.jpg')] bg-no-repeat bg-center bg-cover">
+    <div className="w-full h-full bg-[url('/public/assets/bg-image.jpg')] bg-no-repeat bg-center bg-cover">
       <div className="App">
         <Navbar />
         <Landing />
