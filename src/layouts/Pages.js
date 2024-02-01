@@ -6,16 +6,15 @@ import 'react-multi-carousel/lib/styles.css';
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 5
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 1150 },
     items: 3
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1150, min: 464 },
     items: 2
   },
   mobile: {
@@ -26,21 +25,24 @@ const responsive = {
 
 export default function Pages() {
   return (
-    <section className='min-h-screen w-4/5 m-auto bg-white'>
-      <Carousel responsive={responsive}>
-        {
-          data["webpages"].map((el) => {
-            return (
-              <WebPage
-                key={el.url}
-                url={el.url}
-                title={el.title}
-                imageSrc={el.image}
-              />
-            )
-          })
-        }
-      </Carousel>
+    <section className='min-h-screen w-4/5 m-auto bg-white flex items-center'>
+      <div className='w-full'>
+        <h2 className='text-black text-4xl font-bold my-5'>Titulo epico</h2>
+        <Carousel responsive={responsive}>
+          {
+            data["webpages"].map((el) => {
+              return (
+                <WebPage
+                  key={el.url}
+                  url={el.url}
+                  title={el.title}
+                  imageSrc={el.image}
+                />
+              )
+            })
+          }
+        </Carousel>
+      </div>
     </section>
   )
 }
